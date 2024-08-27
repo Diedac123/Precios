@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde536c6-9edc-468e-9d67-034b959467f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/preparacion_archivo_csv.py" afterDir="false" />
+    <list default="true" id="dde536c6-9edc-468e-9d67-034b959467f2" name="Changes" comment="Add script to unzip and combine CSV files&#10;&#10;Created `preparacion_archivo_csv.py` to handle unzipping of nested zip files and concatenation of CSV files within the extracted directories. Adjustments were also made in project configuration files to support the new script.">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/preparacion_archivo_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/preparacion_archivo_csv.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,19 +45,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.preparacion_archivo_csv.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.preparacion_archivo_csv.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.black.configuration.BlackFormatterConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -74,14 +75,29 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1724428479801</updated>
-      <workItem from="1724428481537" duration="11212000" />
+      <workItem from="1724428481537" duration="11738000" />
+      <workItem from="1724762665743" duration="569000" />
+      <workItem from="1724773221660" duration="12622000" />
     </task>
+    <task id="LOCAL-00001" summary="Add script to unzip and combine CSV files&#10;&#10;Created `preparacion_archivo_csv.py` to handle unzipping of nested zip files and concatenation of CSV files within the extracted directories. Adjustments were also made in project configuration files to support the new script.">
+      <option name="closed" value="true" />
+      <created>1724441301128</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1724441301128</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add script to unzip and combine CSV files&#10;&#10;Created `preparacion_archivo_csv.py` to handle unzipping of nested zip files and concatenation of CSV files within the extracted directories. Adjustments were also made in project configuration files to support the new script." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add script to unzip and combine CSV files&#10;&#10;Created `preparacion_archivo_csv.py` to handle unzipping of nested zip files and concatenation of CSV files within the extracted directories. Adjustments were also made in project configuration files to support the new script." />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Precios$preparacion_archivo_csv.coverage" NAME="preparacion_archivo_csv Coverage Results" MODIFIED="1724439620179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Precios$preparacion_archivo_csv.coverage" NAME="preparacion_archivo_csv Coverage Results" MODIFIED="1724786017961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
