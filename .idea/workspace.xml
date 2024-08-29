@@ -11,6 +11,14 @@
             </AIAssistantStoredInstruction>
           </value>
         </entry>
+        <entry key="AIAssistant.WriteDocumentation.Python">
+          <value>
+            <AIAssistantStoredInstruction>
+              <option name="actionId" value="AIAssistant.WriteDocumentation.Python" />
+              <option name="content" value="Do not return example code, do not use @author or @version or @since tags.&#10;DO NOT generate example usage.&#10;DO NOT generate usage example.&#10;DO NOT use html tags such as &lt;p&gt;, &lt;lu&gt;, &lt;li&gt;.&#10;DO NOT generate documentation for type member properties.&#10;All in spanish" />
+            </AIAssistantStoredInstruction>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
@@ -18,9 +26,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde536c6-9edc-468e-9d67-034b959467f2" name="Changes" comment="Renombra archivo y estandariza nombres&#10;&#10;Se renombró `file_processing.py` a `procesado_archivo.py`. Además, se estandarizaron los nombres de constantes y funciones para utilizar español.">
+    <list default="true" id="dde536c6-9edc-468e-9d67-034b959467f2" name="Changes" comment="Cambia nombre de clave en diccionario&#10;&#10;Se actualizó la clave del diccionario de &quot;comercios.csv&quot; a &quot;comercio.csv&quot; para corregir un error en el nombre. Este ajuste asegura la adecuada combinación y guardado de los datos en el archivo correspondiente.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preparacion_archivo_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/preparacion_archivo_csv.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/procesado_archivo.py" beforeDir="false" afterPath="$PROJECT_DIR$/procesado_archivo.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +77,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.black.configuration.BlackFormatterConfigurable",
+    "settings.editor.selected.configurable": "ml.llm.AIAssistantPromptsLibrary",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -94,7 +101,7 @@
       <workItem from="1724762665743" duration="569000" />
       <workItem from="1724773221660" duration="12700000" />
       <workItem from="1724935591635" duration="7495000" />
-      <workItem from="1724944910005" duration="3358000" />
+      <workItem from="1724944910005" duration="5921000" />
     </task>
     <task id="LOCAL-00001" summary="Add script to unzip and combine CSV files&#10;&#10;Created `preparacion_archivo_csv.py` to handle unzipping of nested zip files and concatenation of CSV files within the extracted directories. Adjustments were also made in project configuration files to support the new script.">
       <option name="closed" value="true" />
@@ -136,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724946297235</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Cambia nombre de clave en diccionario&#10;&#10;Se actualizó la clave del diccionario de &quot;comercios.csv&quot; a &quot;comercio.csv&quot; para corregir un error en el nombre. Este ajuste asegura la adecuada combinación y guardado de los datos en el archivo correspondiente.">
+      <option name="closed" value="true" />
+      <created>1724948540133</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1724948540133</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,10 +164,11 @@
     <MESSAGE value="Add file processing script for handling and combining CSVs&#10;&#10;Created `file_processing.py` to extract ZIP files, process specific 'comercio' files, and combine individual CSVs into consolidated files. This script also manages directory cleanup and error handling during the processing steps." />
     <MESSAGE value="Rename file_processing.py to procesado_archivo.py&#10;&#10;Renamed the file to reflect Spanish naming conventions. Updated all function and variable names to maintain consistency with the new file name. The core logic and functionality remain unchanged.&#10;" />
     <MESSAGE value="Renombra archivo y estandariza nombres&#10;&#10;Se renombró `file_processing.py` a `procesado_archivo.py`. Además, se estandarizaron los nombres de constantes y funciones para utilizar español." />
-    <option name="LAST_COMMIT_MESSAGE" value="Renombra archivo y estandariza nombres&#10;&#10;Se renombró `file_processing.py` a `procesado_archivo.py`. Además, se estandarizaron los nombres de constantes y funciones para utilizar español." />
+    <MESSAGE value="Cambia nombre de clave en diccionario&#10;&#10;Se actualizó la clave del diccionario de &quot;comercios.csv&quot; a &quot;comercio.csv&quot; para corregir un error en el nombre. Este ajuste asegura la adecuada combinación y guardado de los datos en el archivo correspondiente." />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambia nombre de clave en diccionario&#10;&#10;Se actualizó la clave del diccionario de &quot;comercios.csv&quot; a &quot;comercio.csv&quot; para corregir un error en el nombre. Este ajuste asegura la adecuada combinación y guardado de los datos en el archivo correspondiente." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Precios$procesado_archivo.coverage" NAME="procesado_archivo Coverage Results" MODIFIED="1724948312954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Precios$procesado_archivo.coverage" NAME="procesado_archivo Coverage Results" MODIFIED="1724950259831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Precios$preparacion_archivo_csv.coverage" NAME="preparacion_archivo_csv Coverage Results" MODIFIED="1724947574135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
