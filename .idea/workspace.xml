@@ -26,10 +26,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde536c6-9edc-468e-9d67-034b959467f2" name="Changes" comment="Cambia nombre de clave en diccionario&#10;&#10;Se actualizó la clave del diccionario de &quot;comercios.csv&quot; a &quot;comercio.csv&quot; para corregir un error en el nombre. Este ajuste asegura la adecuada combinación y guardado de los datos en el archivo correspondiente.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/procesado_archivo.py" beforeDir="false" afterPath="$PROJECT_DIR$/procesado_archivo.py" afterDir="false" />
-    </list>
+    <list default="true" id="dde536c6-9edc-468e-9d67-034b959467f2" name="Changes" comment="Cambia nombre de clave en diccionario&#10;&#10;Se actualizó la clave del diccionario de &quot;comercios.csv&quot; a &quot;comercio.csv&quot; para corregir un error en el nombre. Este ajuste asegura la adecuada combinación y guardado de los datos en el archivo correspondiente." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,21 +63,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.preparacion_archivo_csv.executor": "Run",
-    "Python.procesado_archivo.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "ml.llm.AIAssistantPromptsLibrary",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.preparacion_archivo_csv.executor&quot;: &quot;Run&quot;,
+    &quot;Python.procesado_archivo.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.AIAssistantPromptsLibrary&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -151,7 +148,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724948540133</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Cambia nombre de clave en diccionario&#10;&#10;Se actualizó la clave del diccionario de &quot;comercios.csv&quot; a &quot;comercio.csv&quot; para corregir un error en el nombre. Este ajuste asegura la adecuada combinación y guardado de los datos en el archivo correspondiente.">
+      <option name="closed" value="true" />
+      <created>1724968347600</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1724968347600</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
