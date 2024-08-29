@@ -12,7 +12,7 @@ def unzipear(file):
     unzip_path = os.path.join(file_path, file_name)  # nuevo directorio donde extraer
     with zipfile.ZipFile(file, "r") as zip_file:
         zip_file.extractall(unzip_path)
-    # os.unlink(file)  # borra el archivo zip original
+    os.unlink(file)  # borra el archivo zip original
     lista = os.listdir(unzip_path)
     for item in lista:
         item = os.path.join(unzip_path, item)
@@ -50,60 +50,31 @@ def unir_csv(path):
     combinado_productos = pd.DataFrame()
     combinado_sucursales = pd.DataFrame()
 
-    for i, file in enumerate(archivos_comercios):
-        try:
-            df = pd.read_csv(file, on_bad_lines="skip")
-            df = df.iloc[:-1]  # elimina la ultima fila
-            combinado_comercios = pd.concat(
-                [combinado_comercios, df], ignore_index=True
-            )
-        except Exception as e:
-            print(f"Error reading {file}: {e}")
+    cvs_a_combinar = [combinado_comercios, combinado_productos, combinado_sucursales]
+    archivos_a_combinar = [archivos_comercios, archivos_productos, archivos_sucursales]
+    nombres_archivos = ["comercios", "productos", "sucursales"]
 
-    # Drop duplicate columns (if exists) typically when headers are repeated
-    combinado_comercios = combinado_comercios.loc[
-        :, ~combinado_comercios.columns.duplicated()
-    ]
+    for i in range(len(cvs_a_combinar)):
+        for file in archivos_a_combinar[i]:
+            try:
+                df = pd.read_csv(file, on_bad_lines="skip")
+                df = df.iloc[:-1]  # elimina la ultima fila
+                cvs_a_combinar[i] = pd.concat(
+                    [cvs_a_combinar[i], df], ignore_index=True
+                )
+            except Exception as e:
+                print(f"Error reading {file}: {e}")
 
-    # Save the combined `.csv` file
-    combinado_comercios.to_csv(
-        f"{directorio}/combinado_comercios.csv",
-        index=False,
-    )
+        # Drop duplicate columns (if exists) typically when headers are repeated
+        cvs_a_combinar[i] = cvs_a_combinar[i].loc[
+            :, ~cvs_a_combinar[i].columns.duplicated()
+        ]
 
-    for i, file in enumerate(archivos_productos):
-        try:
-            df = pd.read_csv(file, on_bad_lines="skip")
-            df = df.iloc[:-1]
-            combinado_productos = pd.concat(
-                [combinado_productos, df], ignore_index=True
-            )
-        except Exception as e:
-            print(f"Error reading {file}: {e}")
-    combinado_productos = combinado_productos.loc[
-        :, ~combinado_productos.columns.duplicated()
-    ]
-    combinado_productos.to_csv(
-        f"{directorio}/combinado_productos.csv",
-        index=False,
-    )
-
-    for i, file in enumerate(archivos_sucursales):
-        try:
-            df = pd.read_csv(file, on_bad_lines="skip")
-            df = df.iloc[:-1]
-            combinado_sucursales = pd.concat(
-                [combinado_sucursales, df], ignore_index=True
-            )
-        except Exception as e:
-            print(f"Error reading {file}: {e}")
-    combinado_sucursales = combinado_sucursales.loc[
-        :, ~combinado_sucursales.columns.duplicated()
-    ]
-    combinado_sucursales.to_csv(
-        f"{directorio}/combinado_sucursales.csv",
-        index=False,
-    )
+        # Save the combined `.csv` file
+        cvs_a_combinar[i].to_csv(
+            f"{directorio}/{nombres_archivos[i]}.csv",
+            index=False,
+        )
 
     for carpeta in carpetas_a_borrar[1:]:
         try:
