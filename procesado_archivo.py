@@ -26,7 +26,7 @@ def extraer_zip_en_directorio(archivo_zip, directorio_destino):
 def manejar_archivos_comercio(directorio_base, archivos_extraidos):
     """
 
-    Este método se encarga de manejar archivos comercio. Recibe dos parámetros: directorio_base y archivos_extraidos.
+    Esta función se encarga de manejar archivos comercio. Recibe dos parámetros: directorio_base y archivos_extraidos.
 
     :param directorio_base: El directorio base donde se encuentran los archivos.
     :param archivos_extraidos: Una lista de nombres de archivos que se han extraído.
