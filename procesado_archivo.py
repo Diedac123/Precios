@@ -60,7 +60,7 @@ def combinar_archivos_csv(ruta, tipo_archivo, dataframe_combinado):
 
 def combinar_y_guardar_csvs(ruta, directorio_destino):
     datos_combinados = {
-        "comercios.csv": pd.DataFrame(),
+        "comercio.csv": pd.DataFrame(),
         "productos.csv": pd.DataFrame(),
         "sucursales.csv": pd.DataFrame(),
     }
