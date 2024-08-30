@@ -12,7 +12,8 @@ CODIGOS_COMERCIO = (3, 9, 12, 15, 16, 2000, 2002, 2005, 2007, 2011, 3001, 10, 11
 def extraer_zip_en_directorio(archivo_zip, directorio_destino):
     """
 
-    La función `extraer_zip_en_directorio` toma como entrada un archivo zip y un directorio de destino, y extrae el contenido del archivo zip en el directorio especificado.
+    La función `extraer_zip_en_directorio` toma como entrada un archivo zip y un directorio de destino, y extrae el
+    contenido del archivo zip en el directorio especificado.
 
     :param archivo_zip: Ruta del archivo zip que se desea extraer.
     :param directorio_destino: Ruta del directorio en el que se extraerá el contenido del archivo zip.
@@ -73,13 +74,16 @@ def combinar_archivos_csv(ruta, tipo_archivo, dataframe_combinado):
     :param dataframe_combinado: El DataFrame en el cual se van a combinar los archivos CSV.
     :return: El DataFrame combinado con los datos de todos los archivos CSV.
 
-    La función `combinar_archivos_csv` toma la ruta de un directorio, el nombre de un archivo CSV y un DataFrame ya existente. Recorre todos los archivos en la ruta especificada y si encuentra un archivo con el nombre especificado, lo lee usando la biblioteca `pandas`. Luego, se realiza la siguiente operación en el DataFrame combinado:
+    La función `combinar_archivos_csv` toma la ruta de un directorio, el nombre de un archivo CSV y un DataFrame ya
+    existente. Recorre todos los archivos en la ruta especificada y si encuentra un archivo con el nombre especificado,
+    lo lee usando la biblioteca `pandas`. Luego, se realiza la siguiente operación en el DataFrame combinado:
 
     1. Se elimina la última fila del DataFrame leído.
     2. Se concatena el DataFrame leído con el DataFrame combinado, ignorando los índices existentes.
     3. Si ocurre algún error durante la lectura del archivo, se imprime un mensaje de error en la consola.
 
-    Después de combinar todos los archivos CSV, se elimina cualquier columna duplicada en el DataFrame combinado y se devuelve el DataFrame resultante.
+    Después de combinar todos los archivos CSV, se elimina cualquier columna duplicada en el DataFrame combinado y se
+    devuelve el DataFrame resultante.
 
     Note: Este código está escrito en Python utilizando la sintaxis reStructuredText para documentar.
     """
@@ -105,19 +109,27 @@ def combinar_archivos_csv(ruta, tipo_archivo, dataframe_combinado):
 
 def combinar_y_guardar_csvs(ruta, directorio_destino):
     """
-    La función `combinar_y_guardar_csvs` recibe dos parámetros: `ruta` y `directorio_destino`. Esta función combina y guarda archivos csv en un directorio de destino.
+    La función `combinar_y_guardar_csvs` recibe dos parámetros: `ruta` y `directorio_destino`. Esta función combina y
+     guarda archivos csv en un directorio de destino.
 
     :param ruta: La ruta del directorio que contiene los archivos csv a combinar.
     :param directorio_destino: El directorio de destino donde se guardarán los archivos csv combinados.
     :return: No retorna ningún valor.
 
     Algoritmo:
-    1. Se crea un diccionario llamado `datos_combinados` con tres elementos: `comercio.csv`, `productos.csv` y `sucursales.csv`, inicializados con un DataFrame vacío de pandas.
-    2. Se itera sobre el diccionario `datos_combinados` y se combinan los archivos csv en la ruta indicada utilizando la función `combinar_archivos_csv`. El resultado de la combinación se guarda en el DataFrame correspondiente en el diccionario.
-    3. Se guarda cada DataFrame combinado en un archivo csv en el directorio de destino utilizando la función `to_csv` de pandas.
-    4. Se realiza un recorrido del directorio `ruta` utilizando la función `os.walk`. Si la raíz actual no es igual a la ruta principal, se intenta eliminar el directorio utilizando la función `shutil.rmtree`. Si ocurre algún error durante la eliminación, se muestra un mensaje de error.
+    1. Se crea un diccionario llamado `datos_combinados` con tres elementos: `comercio.csv`, `productos.csv` y
+    `sucursales.csv`, inicializados con un DataFrame vacío de pandas.
+    2. Se itera sobre el diccionario `datos_combinados` y se combinan los archivos csv en la ruta indicada utilizando
+    la función `combinar_archivos_csv`. El resultado de la combinación se guarda en el DataFrame correspondiente en el
+    diccionario.
+    3. Se guarda cada DataFrame combinado en un archivo csv en el directorio de destino utilizando la función `to_csv`
+     de pandas.
+    4. Se realiza un recorrido del directorio `ruta` utilizando la función `os.walk`. Si la raíz actual no es igual
+    a la ruta principal, se intenta eliminar el directorio utilizando la función `shutil.rmtree`. Si ocurre algún error
+    durante la eliminación, se muestra un mensaje de error.
 
-    Es importante tener en cuenta que esta función no retorna ningún valor y puede imprimir mensajes de error en caso de que ocurra un problema durante la eliminación de directorios.
+    Es importante tener en cuenta que esta función no retorna ningún valor y puede imprimir mensajes de error en caso
+    de que ocurra un problema durante la eliminación de directorios.
     """
     datos_combinados = {
         "comercio.csv": pd.DataFrame(),
