@@ -26,7 +26,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde536c6-9edc-468e-9d67-034b959467f2" name="Changes" comment="Añade cambios de configuración y archivos no comprometidos&#10;&#10;Se añadió un parche para almacenar cambios no comprometidos y se modificaron configuraciones en varios archivos XML relacionados con el entorno de desarrollo. También se hicieron ajustes en tareas locales y manejo de paquetes." />
+    <list default="true" id="dde536c6-9edc-468e-9d67-034b959467f2" name="Changes" comment="Elimina `preparacion_archivo_csv.py` y actualiza configuración&#10;&#10;Se eliminó el script `preparacion_archivo_csv.py` utilizado para la descompresión y combinación de archivos CSV. Además, se realizaron actualizaciones en la configuración del entorno y ajustes en tareas locales y manejo de paquetes." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,27 +63,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.preparacion_archivo_csv.executor": "Run",
-    "Python.procesado_archivo.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "ml.llm.AIAssistantPromptsLibrary",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.preparacion_archivo_csv.executor&quot;: &quot;Run&quot;,
+    &quot;Python.procesado_archivo.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.AIAssistantPromptsLibrary&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-PY-242.20224.428" />
-        <option value="bundled-python-sdk-80e8e15d2b92-39cff9de6eef-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.20224.428" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-PY-242.21829.153" />
+        <option value="bundled-python-sdk-464836ebc622-b74155a9e76b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.21829.153" />
       </set>
     </attachedChunks>
   </component>
@@ -101,6 +101,7 @@
       <workItem from="1724935591635" duration="7495000" />
       <workItem from="1724944910005" duration="5921000" />
       <workItem from="1724968380209" duration="80000" />
+      <workItem from="1724968668992" duration="136000" />
     </task>
     <task id="LOCAL-00001" summary="Add script to unzip and combine CSV files&#10;&#10;Created `preparacion_archivo_csv.py` to handle unzipping of nested zip files and concatenation of CSV files within the extracted directories. Adjustments were also made in project configuration files to support the new script.">
       <option name="closed" value="true" />
@@ -166,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724968434440</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Elimina `preparacion_archivo_csv.py` y actualiza configuración&#10;&#10;Se eliminó el script `preparacion_archivo_csv.py` utilizado para la descompresión y combinación de archivos CSV. Además, se realizaron actualizaciones en la configuración del entorno y ajustes en tareas locales y manejo de paquetes.">
+      <option name="closed" value="true" />
+      <created>1724968777096</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1724968777096</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,7 +190,8 @@
     <MESSAGE value="Renombra archivo y estandariza nombres&#10;&#10;Se renombró `file_processing.py` a `procesado_archivo.py`. Además, se estandarizaron los nombres de constantes y funciones para utilizar español." />
     <MESSAGE value="Cambia nombre de clave en diccionario&#10;&#10;Se actualizó la clave del diccionario de &quot;comercios.csv&quot; a &quot;comercio.csv&quot; para corregir un error en el nombre. Este ajuste asegura la adecuada combinación y guardado de los datos en el archivo correspondiente." />
     <MESSAGE value="Añade cambios de configuración y archivos no comprometidos&#10;&#10;Se añadió un parche para almacenar cambios no comprometidos y se modificaron configuraciones en varios archivos XML relacionados con el entorno de desarrollo. También se hicieron ajustes en tareas locales y manejo de paquetes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Añade cambios de configuración y archivos no comprometidos&#10;&#10;Se añadió un parche para almacenar cambios no comprometidos y se modificaron configuraciones en varios archivos XML relacionados con el entorno de desarrollo. También se hicieron ajustes en tareas locales y manejo de paquetes." />
+    <MESSAGE value="Elimina `preparacion_archivo_csv.py` y actualiza configuración&#10;&#10;Se eliminó el script `preparacion_archivo_csv.py` utilizado para la descompresión y combinación de archivos CSV. Además, se realizaron actualizaciones en la configuración del entorno y ajustes en tareas locales y manejo de paquetes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Elimina `preparacion_archivo_csv.py` y actualiza configuración&#10;&#10;Se eliminó el script `preparacion_archivo_csv.py` utilizado para la descompresión y combinación de archivos CSV. Además, se realizaron actualizaciones en la configuración del entorno y ajustes en tareas locales y manejo de paquetes." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Precios$procesado_archivo.coverage" NAME="procesado_archivo Coverage Results" MODIFIED="1724950259831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
